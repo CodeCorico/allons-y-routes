@@ -11,8 +11,7 @@
 
     var controllers = [];
 
-    $.each(urls, function(i, url) {
-
+    urls.forEach(function(url) {
       _controllers[url] = _controllers[url] || {};
       _controllers[url][file] = _controllers[url][file] || {};
       _controllers[url][file][type] = _controllers[url][file][type] || null;
@@ -34,7 +33,7 @@
       route.urls = [route.urls];
     }
 
-    $.each(route.urls, function(i, url) {
+    route.urls.forEach(function(url) {
       pageCall(url, function(context, next) {
         require(route.file).then(function() {
           var controller = window.page.controller(route.file, url, isExit ? 'exit' : 'enter');

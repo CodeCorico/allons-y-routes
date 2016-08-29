@@ -148,6 +148,6 @@ module.exports = function routes($allonsy, $gulp) {
 
   return {
     task: 'routes',
-    watch: 'controllers/' + filesPattern
+    watch: $allonsy.globPatterns('controllers/' + filesPattern)
   };
 };
