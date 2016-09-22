@@ -47,7 +47,6 @@ module.exports = function routes($allonsy, $gulp) {
 
           file.path = path.resolve(fileSplitted.join(path.sep) + '/' + fileFeature + '/' + fileName);
 
-
           if (!Array.isArray(routesConfig)) {
             routesConfig = [routesConfig];
           }
@@ -57,9 +56,9 @@ module.exports = function routes($allonsy, $gulp) {
               return;
             }
 
-            routeConfig.priority = typeof routeConfig.priority != 'number' ? 50 : routeConfig.priority;
             routeConfig.priority = routeConfig.priority == 'min' ? 0 : routeConfig.priority;
             routeConfig.priority = routeConfig.priority == 'max' ? 100 : routeConfig.priority;
+            routeConfig.priority = typeof routeConfig.priority != 'number' ? 50 : routeConfig.priority;
 
             var urls = routeConfig.urls || routeConfig.url;
             if (typeof urls == 'string') {
@@ -142,11 +141,11 @@ module.exports = function routes($allonsy, $gulp) {
             routesFile.contents = new Buffer(routesFile.contents.toString().replace('{{routes}}', '[\n' +
               routes
                 .sort(function(a, b) {
-                  if (a.priority > b.priority) {
+                  if (b.priority < a.priority) {
                     return -1;
                   }
 
-                  if (a.priority < b.priority) {
+                  if (b.priority > a.priority) {
                     return 1;
                   }
 
