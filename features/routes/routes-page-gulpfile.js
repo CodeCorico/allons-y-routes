@@ -8,7 +8,7 @@ module.exports = function($gulp) {
 
   $gulp.task('page', function(done) {
     $gulp
-      .src('node_modules/page/page.js')
+      .src('./node_modules/page/page.js')
       .pipe($gulp.dist('vendor'))
       .pipe(sourcemaps.init())
       .pipe(uglify())
