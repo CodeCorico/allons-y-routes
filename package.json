@@ -15,7 +15,7 @@
     "npm": ">=3.2"
   },
   "dependencies": {
-    "allons-y-gulp": "^1.0.0",
+    "allons-y-gulp": "^1.0.1",
     "extend": "^3.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^1.6.0",
