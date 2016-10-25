@@ -1,4 +1,4 @@
-<!-- Please do not submit support request here, instead see https://github.com/CodeCorico/allons-y-dotenv/blob/master/CONTRIBUTING.md#question -->
+<!-- Please do not submit support request here, instead see https://github.com/CodeCorico/allons-y-routes/blob/master/CONTRIBUTING.md#question -->
 
 **I'm submitting a...**  (check one with "x")
 ```

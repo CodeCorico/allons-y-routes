@@ -1,5 +1,5 @@
 **Please check if the PR fulfills these requirements**
-- [ ] The commit message follows our guidelines: https://github.com/CodeCorico/allons-y-dotenv/blob/master/CONTRIBUTING.md#commit
+- [ ] The commit message follows our guidelines: https://github.com/CodeCorico/allons-y-routes/blob/master/CONTRIBUTING.md#commit
 - [ ] Docs have been added / updated to the [Wiki](https://allons-y.io/wiki)
 
 
