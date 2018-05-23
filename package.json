@@ -21,6 +21,12 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^2.0.0",
     "page": "^1.7.1",
-    "through2": "^2.0.1"
-  }
+    "through2": "^2.0.1",
+    "snyk": "^1.80.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
